@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru" data-skin="dispatch">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <!--
+      Политика содержимого: страница статичная и без скриптов, всё грузится только с этого же адреса
+      (стили, шрифты, скриншоты). Встроенных стилей и адресов data: нет. Директивы, которые не берут значение
+      из default-src, заданы явно, как у демо.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    >
+    <title>Vendrail</title>
+    <link rel="stylesheet" crossorigin href="/vendrail-site/assets/landing-CLgbYy-5.css">
+  </head>
+  <body>
+    <header class="topbar">
+    <div class="shell topbar-inner">
+      <span class="wordmark">Vendrail</span>
+      <a href="#features">Возможности</a>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="intro" aria-labelledby="purpose">
+      <h1 id="purpose">Разбор возвратов на вендинговых аппаратах</h1>
+      <p class="intro-description">Рабочее место оператора вендинга. Vendrail собирает операции по аппаратам и помогает решить, какие возвраты и точки проверить в первую очередь.</p>
+      <a class="demo-button" href="./demo/">Открыть демо</a>
+      <p class="demo-note">Демо начинается с обучающего тура и работает на вымышленных данных.</p>
+    </section>
+    <section class="frame-group" aria-labelledby="features">
+      <h2 id="features">Возможности демо</h2>
+      <p>Откройте разбор дня, проверьте операции и найдите аппарат в парке.</p>
+      <div class="frame-grid"><figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Обзор парка</h3>
+      <p>Сводка состояния аппаратов, возвратов и очереди разбора на одном экране.</p>
+    </figcaption>
+    <picture>
+          <source srcset="./screens/dashboard.webp" type="image/webp">
+          <img src="./screens/dashboard.png" alt="Обзор парка Vendrail с показателями и очередью разбора." width="1440" height="900" loading="lazy">
+        </picture>
+  </figure></div>
+    </section>
+    <details class="frame-group" id="not-in-demo" open>
+    <summary><h2>Что не вошло в демо</h2></summary>
+    <p>Эти разделы и вкладки доступны в полной версии программы.</p>
+    <div class="frame-grid"><figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Работа со случаями</h3>
+      <p>Отбор по статусу и история действий по обращению.</p>
+    </figcaption>
+    <picture>
+          <source srcset="./screens/incidents.webp" type="image/webp">
+          <img src="./screens/incidents.png" alt="Экран раздела «Случаи» с фильтрами и списком обращений." width="1440" height="900" loading="lazy">
+        </picture>
+  </figure>
+<figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Плановое обслуживание</h3>
+      <p>Календарь обслуживания площадок и распределение работ между техниками.</p>
+    </figcaption>
+    <picture>
+          <source srcset="./screens/maintenance.webp" type="image/webp">
+          <img src="./screens/maintenance.png" alt="Календарь обслуживания с площадками и днями месяца." width="1440" height="900" loading="lazy">
+        </picture>
+  </figure>
+<figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Отчёты по возвратам</h3>
+      <p>Таблица возвратов по аппаратам, сводка периода и реестр обращений.</p>
+    </figcaption>
+    <picture>
+          <source srcset="./screens/reports.webp" type="image/webp">
+          <img src="./screens/reports.png" alt="Вкладка «Возвраты» в разделе «Отчёты»." width="1440" height="900" loading="lazy">
+        </picture>
+  </figure>
+<figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Статистика по периодам</h3>
+      <p>Два диапазона дат для сравнения показателей.</p>
+    </figcaption>
+    <picture>
+          <source srcset="./screens/statistics.webp" type="image/webp">
+          <img src="./screens/statistics.png" alt="Вкладка «Сравнение периодов» с выбором дат и кнопкой построения отчёта." width="1440" height="900" loading="lazy">
+        </picture>
+  </figure>
+<figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Обработка таблицы</h3>
+      <p>Подготовка списка точек для дальнейшей работы с данными.</p>
+    </figcaption>
+    <picture>
+          <source srcset="./screens/table-processing.webp" type="image/webp">
+          <img src="./screens/table-processing.png" alt="Конвертор раздела «Обработка таблицы» с полем ввода списка точек." width="1440" height="900" loading="lazy">
+        </picture>
+  </figure>
+<figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Журнал аудита</h3>
+      <p>Доступ к журналу действий по выбранному периоду.</p>
+    </figcaption>
+    <picture>
+          <source srcset="./screens/audit.webp" type="image/webp">
+          <img src="./screens/audit.png" alt="Журнал аудита с набором фильтров по периоду." width="1440" height="900" loading="lazy">
+        </picture>
+  </figure>
+<figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Подключения, справочник и станция</h3>
+      <p>Три вкладки полной версии для работы с внешними системами, справочником и параметрами станции.</p>
+    </figcaption>
+    <picture>
+          <source srcset="./screens/settings-full.webp" type="image/webp">
+          <img src="./screens/settings-full.png" alt="Панель настроек с вкладками «Подключения», «Справочник» и «Станция»." width="1440" height="900" loading="lazy">
+        </picture>
+  </figure></div>
+  </details>
+    <details class="frame-group" open>
+    <summary><h2>За пределами тура</h2></summary>
+    <p>Настройки рабочего места и управление доступом показаны отдельными кадрами.</p>
+    <div class="frame-grid"><figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Настройки рабочего места</h3>
+      <p>Настройки темы, оформления и звука уведомлений доступны в демо.</p>
+    </figcaption>
+    <picture>
+          <source srcset="./screens/settings.webp" type="image/webp">
+          <img src="./screens/settings.png" alt="Раздел «Настройки» на вкладке «Рабочее место»." width="1440" height="900" loading="lazy">
+        </picture>
+  </figure>
+<figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Сотрудники, роли и права</h3>
+      <p>Управление сотрудниками, ролями и сеансами в разделе администрирования.</p>
+    </figcaption>
+    <picture>
+          <source srcset="./screens/admin.webp" type="image/webp">
+          <img src="./screens/admin.png" alt="Раздел «Администрирование» со списком сотрудников." width="1440" height="900" loading="lazy">
+        </picture>
+  </figure></div>
+  </details>
+  </main>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Vendrail — демо</title>
+    <!--
+      Строгая политика содержимого (FR-D-001, IS: демо не ходит за пределы своего origin).
+      Всё, что грузит страница, — только с этого же адреса: скрипты, стили, шрифты, карта (geo) и
+      аудиозапись тура. `img-src` дополнительно разрешает data: — иллюстрации моделей аппаратов
+      мост отдаёт как data:-URL, как это делает main в приложении. `style-src 'unsafe-inline'` — как в
+      приложении: часть стилей задаётся inline. `base-uri`,
+      `form-action` и `object-src` к default-src не откатываются — заданы явно.
+      `frame-ancestors` в <meta> не действует (только заголовком ответа), статический хостинг его не
+      задаёт; демо не содержит действий, которые опасно встроить в чужую страницу.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <link rel="icon" href="data:," />
+    <script type="module" crossorigin src="/vendrail-site/demo/assets/index-J2MjJ1Nc.js"></script>
+    <link rel="modulepreload" crossorigin href="/vendrail-site/demo/assets/zod-config-Bj-6MmEE.js">
+    <link rel="modulepreload" crossorigin href="/vendrail-site/demo/assets/ipc-contract-C1rkAeXo.js">
+    <link rel="modulepreload" crossorigin href="/vendrail-site/demo/assets/operation-log-details-DGXyb5eS.js">
+    <link rel="modulepreload" crossorigin href="/vendrail-site/demo/assets/anchors-z18TC-l-.js">
+    <link rel="stylesheet" crossorigin href="/vendrail-site/demo/assets/operation-log-details-B7rC8arg.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <noscript>Демо Vendrail работает только с включённым JavaScript.</noscript>
+  </body>
+</html>
