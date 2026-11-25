@@ -14,7 +14,7 @@
       content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
     >
     <title>Vendrail</title>
-    <link rel="stylesheet" crossorigin href="/vendrail-site/assets/landing-B6ltJKPW.css">
+    <link rel="stylesheet" crossorigin href="/vendrail-site/assets/landing-B0Sww2Ft.css">
   <link rel="icon" type="image/svg+xml" href="/vendrail-site/vendrail.svg">
   </head>
   <body>
@@ -33,7 +33,7 @@
     </section>
     <section class="frame-group" aria-labelledby="features">
       <h2 id="features">От всего парка до отдельного аппарата</h2>
-      <p>Откройте карту проблемных точек, затем посмотрите, как устроена история операций отдельного аппарата.</p>
+      <p>Откройте карту проблемных точек, затем посмотрите, как устроена история операций отдельного аппарата. Завершает подборку отчёт «Статистика по периодам»: он есть только в полной версии программы.</p>
       <div class="frame-grid frame-grid-featured"><figure class="frame">
     <figcaption class="frame-copy">
       <h3>Обзор парка</h3>
@@ -59,20 +59,33 @@
     <figcaption class="frame-copy">
       <h3>Свойства аппарата</h3>
       <p>Модель, состояние связи и история продаж и возвратов с номерами ячеек и причинами сбоев.</p>
+      
     </figcaption>
     <picture>
     <source srcset="./screens/machine-properties.webp" type="image/webp">
     <img src="./screens/machine-properties.png" alt="Свойства аппарата Vendrail с изображением модели, историей продаж и возвратов по ячейкам." width="1440" height="900" loading="lazy">
   </picture>
+  </figure>
+<figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Статистика по периодам</h3>
+      <p>Потери и выручка за вычетом возвратов по сетям, регионам и типам аппаратов в сравнении с предыдущим периодом.</p>
+      <p class="frame-badge">Только в полной версии, в демо недоступно</p>
+    </figcaption>
+    <picture>
+    <source srcset="./screens/statistics.webp" type="image/webp">
+    <img src="./screens/statistics.png" alt="Готовый отчёт о потерях и чистой выручке с обезличенными названиями сетей и разбивкой по регионам и типам аппаратов." width="1440" height="1080" loading="lazy">
+  </picture>
   </figure></div>
     </section>
     <details class="frame-group" id="not-in-demo" open>
     <summary><h2>Что не вошло в демо</h2></summary>
-    <p>Эти разделы и вкладки доступны в полной версии программы.</p>
-    <div class="frame-grid"><figure class="frame">
+    <p>Эти разделы и вкладки доступны в полной версии программы. «Статистика по периодам», показанная выше, тоже есть только в ней.</p>
+    <div class="frame-grid frame-grid-pairs"><figure class="frame">
     <figcaption class="frame-copy">
       <h3>Работа со случаями</h3>
       <p>Отбор по статусу и история действий по обращению.</p>
+      
     </figcaption>
     <picture>
     <source srcset="./screens/incidents.webp" type="image/webp">
@@ -83,6 +96,7 @@
     <figcaption class="frame-copy">
       <h3>Плановое обслуживание</h3>
       <p>Календарь обслуживания площадок и распределение работ между техниками.</p>
+      
     </figcaption>
     <picture>
     <source srcset="./screens/maintenance.webp" type="image/webp">
@@ -93,26 +107,18 @@
     <figcaption class="frame-copy">
       <h3>Сводка периода в отчётах</h3>
       <p>Ключевые показатели основного периода в сравнении с предыдущим и состав открытых случаев.</p>
+      
     </figcaption>
     <picture>
     <source srcset="./screens/reports.webp" type="image/webp">
     <img src="./screens/reports.png" alt="Построенная сводка периода в разделе «Отчёты»: ключевые показатели и состав открытых случаев." width="1440" height="768" loading="lazy">
   </picture>
   </figure>
-<figure class="frame frame-wide">
-    <figcaption class="frame-copy">
-      <h3>Статистика по периодам</h3>
-      <p>Потери и выручка за вычетом возвратов по сетям, регионам и типам аппаратов в сравнении с предыдущим периодом.</p>
-    </figcaption>
-    <picture>
-    <source srcset="./screens/statistics.webp" type="image/webp">
-    <img src="./screens/statistics.png" alt="Готовый отчёт о потерях и чистой выручке с обезличенными названиями сетей и разбивкой по регионам и типам аппаратов." width="1440" height="1080" loading="lazy">
-  </picture>
-  </figure>
 <figure class="frame">
     <figcaption class="frame-copy">
       <h3>Журнал аудита</h3>
       <p>Доступ к журналу действий по выбранному периоду.</p>
+      
     </figcaption>
     <picture>
     <source srcset="./screens/audit.webp" type="image/webp">
@@ -123,10 +129,11 @@
     <details class="frame-group" open>
     <summary><h2>За пределами тура</h2></summary>
     <p>Настройки рабочего места и управление доступом показаны отдельными кадрами.</p>
-    <div class="frame-grid"><figure class="frame">
+    <div class="frame-grid frame-grid-pairs"><figure class="frame">
     <figcaption class="frame-copy">
       <h3>Настройки рабочего места</h3>
       <p>Настройки темы, оформления и звука уведомлений доступны в демо.</p>
+      
     </figcaption>
     <picture>
     <source srcset="./screens/settings.webp" type="image/webp">
@@ -137,6 +144,7 @@
     <figcaption class="frame-copy">
       <h3>Сотрудники, роли и права</h3>
       <p>Управление сотрудниками, ролями и сеансами в разделе администрирования.</p>
+      
     </figcaption>
     <picture>
     <source srcset="./screens/admin.webp" type="image/webp">
