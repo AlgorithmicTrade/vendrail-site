@@ -14,34 +14,56 @@
       content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
     >
     <title>Vendrail</title>
-    <link rel="stylesheet" crossorigin href="/vendrail-site/assets/landing-CLgbYy-5.css">
+    <link rel="stylesheet" crossorigin href="/vendrail-site/assets/landing-B6ltJKPW.css">
+  <link rel="icon" type="image/svg+xml" href="/vendrail-site/vendrail.svg">
   </head>
   <body>
     <header class="topbar">
     <div class="shell topbar-inner">
-      <span class="wordmark">Vendrail</span>
+      <span class="wordmark"><img src="/vendrail-site/vendrail.svg" alt="" width="32" height="32">Vendrail</span>
       <a href="#features">Возможности</a>
     </div>
   </header>
   <main class="shell">
     <section class="intro" aria-labelledby="purpose">
-      <h1 id="purpose">Разбор возвратов на вендинговых аппаратах</h1>
-      <p class="intro-description">Рабочее место оператора вендинга. Vendrail собирает операции по аппаратам и помогает решить, какие возвраты и точки проверить в первую очередь.</p>
+      <h1 id="purpose">Весь вендинговый парк — под контролем</h1>
+      <p class="intro-description">Следите за продажами и связью аппаратов, вовремя замечайте сбои и планируйте обслуживание. Vendrail показывает, какие точки требуют внимания и как меняется выручка по сетям, регионам и типам аппаратов.</p>
       <a class="demo-button" href="./demo/">Открыть демо</a>
       <p class="demo-note">Демо начинается с обучающего тура и работает на вымышленных данных.</p>
     </section>
     <section class="frame-group" aria-labelledby="features">
-      <h2 id="features">Возможности демо</h2>
-      <p>Откройте разбор дня, проверьте операции и найдите аппарат в парке.</p>
-      <div class="frame-grid"><figure class="frame">
+      <h2 id="features">От всего парка до отдельного аппарата</h2>
+      <p>Откройте карту проблемных точек, затем посмотрите, как устроена история операций отдельного аппарата.</p>
+      <div class="frame-grid frame-grid-featured"><figure class="frame">
     <figcaption class="frame-copy">
       <h3>Обзор парка</h3>
-      <p>Сводка состояния аппаратов, возвратов и очереди разбора на одном экране.</p>
+      <p>Сводка состояния аппаратов, возвратов и очереди разбора на одном экране. Карта показывает точки, где аппараты требуют внимания.</p>
+    </figcaption>
+    <fieldset class="fleet-views">
+      <legend class="visually-hidden">Вид обзора парка</legend>
+      <input class="visually-hidden" type="radio" name="fleet-view" id="fleet-view-overview" checked>
+      <label for="fleet-view-overview">Обычный</label>
+      <input class="visually-hidden" type="radio" name="fleet-view" id="fleet-view-map">
+      <label for="fleet-view-map">Карта</label>
+      <div class="fleet-preview fleet-preview-overview"><picture>
+    <source srcset="./screens/dashboard.webp" type="image/webp">
+    <img src="./screens/dashboard.png" alt="Обзор парка Vendrail с показателями и очередью разбора." width="1440" height="1024" loading="eager">
+  </picture></div>
+      <div class="fleet-preview fleet-preview-map"><picture>
+    <source srcset="./screens/dashboard-map.webp" type="image/webp">
+    <img src="./screens/dashboard-map.png" alt="Карта парка Vendrail с включённым фильтром «Скрыть исправные»." width="1440" height="1024" loading="lazy">
+  </picture></div>
+    </fieldset>
+  </figure>
+<figure class="frame">
+    <figcaption class="frame-copy">
+      <h3>Свойства аппарата</h3>
+      <p>Модель, состояние связи и история продаж и возвратов с номерами ячеек и причинами сбоев.</p>
     </figcaption>
     <picture>
-          <source srcset="./screens/dashboard.webp" type="image/webp">
-          <img src="./screens/dashboard.png" alt="Обзор парка Vendrail с показателями и очередью разбора." width="1440" height="900" loading="lazy">
-        </picture>
+    <source srcset="./screens/machine-properties.webp" type="image/webp">
+    <img src="./screens/machine-properties.png" alt="Свойства аппарата Vendrail с изображением модели, историей продаж и возвратов по ячейкам." width="1440" height="900" loading="lazy">
+  </picture>
   </figure></div>
     </section>
     <details class="frame-group" id="not-in-demo" open>
@@ -53,9 +75,9 @@
       <p>Отбор по статусу и история действий по обращению.</p>
     </figcaption>
     <picture>
-          <source srcset="./screens/incidents.webp" type="image/webp">
-          <img src="./screens/incidents.png" alt="Экран раздела «Случаи» с фильтрами и списком обращений." width="1440" height="900" loading="lazy">
-        </picture>
+    <source srcset="./screens/incidents.webp" type="image/webp">
+    <img src="./screens/incidents.png" alt="Экран раздела «Случаи» с фильтрами и списком обращений." width="1440" height="900" loading="lazy">
+  </picture>
   </figure>
 <figure class="frame">
     <figcaption class="frame-copy">
@@ -63,39 +85,29 @@
       <p>Календарь обслуживания площадок и распределение работ между техниками.</p>
     </figcaption>
     <picture>
-          <source srcset="./screens/maintenance.webp" type="image/webp">
-          <img src="./screens/maintenance.png" alt="Календарь обслуживания с площадками и днями месяца." width="1440" height="900" loading="lazy">
-        </picture>
+    <source srcset="./screens/maintenance.webp" type="image/webp">
+    <img src="./screens/maintenance.png" alt="Календарь обслуживания с площадками и днями месяца." width="1440" height="900" loading="lazy">
+  </picture>
   </figure>
 <figure class="frame">
     <figcaption class="frame-copy">
-      <h3>Отчёты по возвратам</h3>
-      <p>Таблица возвратов по аппаратам, сводка периода и реестр обращений.</p>
+      <h3>Сводка периода в отчётах</h3>
+      <p>Ключевые показатели основного периода в сравнении с предыдущим и состав открытых случаев.</p>
     </figcaption>
     <picture>
-          <source srcset="./screens/reports.webp" type="image/webp">
-          <img src="./screens/reports.png" alt="Вкладка «Возвраты» в разделе «Отчёты»." width="1440" height="900" loading="lazy">
-        </picture>
+    <source srcset="./screens/reports.webp" type="image/webp">
+    <img src="./screens/reports.png" alt="Построенная сводка периода в разделе «Отчёты»: ключевые показатели и состав открытых случаев." width="1440" height="768" loading="lazy">
+  </picture>
   </figure>
-<figure class="frame">
+<figure class="frame frame-wide">
     <figcaption class="frame-copy">
       <h3>Статистика по периодам</h3>
-      <p>Два диапазона дат для сравнения показателей.</p>
+      <p>Потери и выручка за вычетом возвратов по сетям, регионам и типам аппаратов в сравнении с предыдущим периодом.</p>
     </figcaption>
     <picture>
-          <source srcset="./screens/statistics.webp" type="image/webp">
-          <img src="./screens/statistics.png" alt="Вкладка «Сравнение периодов» с выбором дат и кнопкой построения отчёта." width="1440" height="900" loading="lazy">
-        </picture>
-  </figure>
-<figure class="frame">
-    <figcaption class="frame-copy">
-      <h3>Обработка таблицы</h3>
-      <p>Подготовка списка точек для дальнейшей работы с данными.</p>
-    </figcaption>
-    <picture>
-          <source srcset="./screens/table-processing.webp" type="image/webp">
-          <img src="./screens/table-processing.png" alt="Конвертор раздела «Обработка таблицы» с полем ввода списка точек." width="1440" height="900" loading="lazy">
-        </picture>
+    <source srcset="./screens/statistics.webp" type="image/webp">
+    <img src="./screens/statistics.png" alt="Готовый отчёт о потерях и чистой выручке с обезличенными названиями сетей и разбивкой по регионам и типам аппаратов." width="1440" height="1080" loading="lazy">
+  </picture>
   </figure>
 <figure class="frame">
     <figcaption class="frame-copy">
@@ -103,19 +115,9 @@
       <p>Доступ к журналу действий по выбранному периоду.</p>
     </figcaption>
     <picture>
-          <source srcset="./screens/audit.webp" type="image/webp">
-          <img src="./screens/audit.png" alt="Журнал аудита с набором фильтров по периоду." width="1440" height="900" loading="lazy">
-        </picture>
-  </figure>
-<figure class="frame">
-    <figcaption class="frame-copy">
-      <h3>Подключения, справочник и станция</h3>
-      <p>Три вкладки полной версии для работы с внешними системами, справочником и параметрами станции.</p>
-    </figcaption>
-    <picture>
-          <source srcset="./screens/settings-full.webp" type="image/webp">
-          <img src="./screens/settings-full.png" alt="Панель настроек с вкладками «Подключения», «Справочник» и «Станция»." width="1440" height="900" loading="lazy">
-        </picture>
+    <source srcset="./screens/audit.webp" type="image/webp">
+    <img src="./screens/audit.png" alt="Журнал аудита с набором фильтров по периоду." width="1440" height="900" loading="lazy">
+  </picture>
   </figure></div>
   </details>
     <details class="frame-group" open>
@@ -127,9 +129,9 @@
       <p>Настройки темы, оформления и звука уведомлений доступны в демо.</p>
     </figcaption>
     <picture>
-          <source srcset="./screens/settings.webp" type="image/webp">
-          <img src="./screens/settings.png" alt="Раздел «Настройки» на вкладке «Рабочее место»." width="1440" height="900" loading="lazy">
-        </picture>
+    <source srcset="./screens/settings.webp" type="image/webp">
+    <img src="./screens/settings.png" alt="Раздел «Настройки» на вкладке «Рабочее место»." width="1440" height="900" loading="lazy">
+  </picture>
   </figure>
 <figure class="frame">
     <figcaption class="frame-copy">
@@ -137,9 +139,9 @@
       <p>Управление сотрудниками, ролями и сеансами в разделе администрирования.</p>
     </figcaption>
     <picture>
-          <source srcset="./screens/admin.webp" type="image/webp">
-          <img src="./screens/admin.png" alt="Раздел «Администрирование» со списком сотрудников." width="1440" height="900" loading="lazy">
-        </picture>
+    <source srcset="./screens/admin.webp" type="image/webp">
+    <img src="./screens/admin.png" alt="Раздел «Администрирование» со списком сотрудников." width="1440" height="900" loading="lazy">
+  </picture>
   </figure></div>
   </details>
   </main>
